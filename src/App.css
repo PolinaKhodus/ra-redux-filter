@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+html {
+  font-size: calc( 10px + (14 - 10) * ((100vw - 400px) / ( 800 - 400)));
+}
+
+body {
+  font-family: sans-serif;  
+}
+
+.task-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  
+  font-size: 30px;
+  color: white;
+  text-decoration: underline;
+  background-image: linear-gradient(45deg, blue, yellow);
+}
+
+/* Редактирование
+*/
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-bottom: 30px;
+  padding: 20px;
+
+  border: 2px solid tan;
+  border-radius: 20px;
+  background-color: lightgrey;
+}
+
+.input_row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input_row label {
+  width: 20%;
+}
+
+input {
+  outline: none;
+  width: 80%;
+  padding: 5px 10px;
+}
+
+.btn_row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form_btn {
+  width: 70px;
+  height: 30px;
+
+  border: 2px solid blue;
+  border-radius: 5px;
+  background-color: cyan;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.servise__list__row {
+  display: flex;
+  width: 400px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.servise__list__row:not(:first-of-type) {
+  margin-top: 5px;
+}
+
+.row_name {
+  width: 55%
+}
+
+.row_price {
+  width: 20%;
+}
+
+.btn_box button {
+  cursor: pointer;
+}
+
+.btn_box button:first-of-type {
+  margin-right: 5px;
+}
+
+.material-icons {
+  font-size: 18px;
+}
+
+.clear {
+  cursor: pointer;
+}
+
+.inactive {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
